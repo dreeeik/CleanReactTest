@@ -3,6 +3,6 @@ import axios from "axios";
 
 export class AxiosHttpClient {
   async post(params: httpPostParams<Response>): Promise<void> {
-    await axios(params.url);
+    await axios.post(params.url);
   }
 }
